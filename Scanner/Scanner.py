@@ -1,6 +1,19 @@
 # Scanner/Scanner.py
 
 def Scanner(s=''):
+    """
+    Evaluate a user input expression safely.
+
+    Parameters:
+    - s (str): Optional. Prompt string to be displayed to the user.
+
+    Returns:
+    - result: The result of the evaluated expression.
+
+    Example:
+    >>> result = Scanner("Enter an expression: ")
+    >>> print("Result:", result)
+    """
     exp = input(s)
     if not exp.strip():
         return None
